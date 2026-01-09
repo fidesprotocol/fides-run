@@ -1,8 +1,8 @@
 # fides-run
 
-**Minimal executable proof of the Fides Protocol.**
+**Minimal executable proof of the Fides Protocol (v0.1).**
 
-This is not a product. It is executable proof that the protocol works.
+This is not a product. It is executable proof that the protocol's core logic works.
 
 ---
 
@@ -127,9 +127,11 @@ Any failure returns `False`. No exceptions. No override.
 
 ## Protocol Reference
 
-This implementation follows:
+This implementation follows **Fides Protocol v0.1** (historical/frozen):
 - [Fides Protocol v0.1](https://github.com/fidesprotocol/fides/blob/main/spec/FIDES-v0.1.md)
 - [Algorithms Reference](https://github.com/fidesprotocol/fides/blob/main/reference/algorithms.md)
+
+> **Note:** The current protocol version is v0.3, which adds cryptographic signatures, timestamp attestation, and other security hardening. This implementation demonstrates the core *logic* (no record → no payment), not the full security model. See [CHANGELOG](https://github.com/fidesprotocol/fides/blob/main/spec/CHANGELOG.md) for differences.
 
 ---
 

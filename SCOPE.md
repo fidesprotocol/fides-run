@@ -2,9 +2,11 @@
 
 ## Purpose
 
-**fides-run** exists for one reason: to prove that the Fides Protocol works.
+**fides-run** exists for one reason: to prove that the Fides Protocol's core logic works.
 
 It is executable evidence, not software infrastructure.
+
+**Version:** This implementation follows Fides Protocol v0.1 (historical/frozen). The current protocol version is v0.3, which adds security hardening (cryptographic signatures, timestamp attestation, PKI requirements). This repository proves the *logic* — that blocking works — not the full security model.
 
 ---
 
@@ -50,7 +52,9 @@ Running `python -m unittest tests.test_verify -v` proves:
 |------|---------|
 | Scalability | Not relevant for proof |
 | Performance | Not relevant for proof |
-| Security hardening | Requires production context |
+| Security hardening (v0.3) | Requires production context |
+| Cryptographic signatures | v0.3 requirement, not in v0.1 |
+| Timestamp attestation | v0.3 requirement, not in v0.1 |
 | External anchor | Requires infrastructure |
 | Multi-authority chains | Out of scope |
 | Real-world integration | This is proof, not product |
